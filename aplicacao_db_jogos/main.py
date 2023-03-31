@@ -40,6 +40,6 @@ if __name__ == "__main__":
         elif (acao == "L"):
             # Listagem de dados
             jogos = session.query(Jogos).all()
-            print("\n[JOGOS CADASTRADOS]:")
+            print("\n[JOGOS CADASTRADOS]\n")
             for jogo in jogos:
                 print("Nome: ", jogo.nome, " | Plataforma: ", jogo.plataforma, " | Preço: ", jogo.preco, " | Quantidade: ", jogo.quantidade)
